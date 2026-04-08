@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {assets} from "../assets/assets";
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const [visible,setVisilbe] = useState(false);
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
         <img src={assets.logo} className='w-36' alt=''/>
@@ -39,13 +41,27 @@ const Navbar = () => {
                         </div>
                     </div>  
                 </div>
-                <Link to ='/cart' className='relative'>
-                    <img src={assets.cart_icon} className='w-5 min-w-5' alt='' />
-                    <p className='absolute -right-1.25 -bottom-1.25 w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p>
-                </Link>
+                    <Link to ='/cart' className='relative'>
+                        <img src={assets.cart_icon} className='w-5 min-w-5' alt='' />
+                        <p className='absolute -right-1.25 -bottom-1.25 w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p>
+                    </Link>
+                    <img onClick={()=>setVisilbe(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
+            </div>
 
 
-
+            {/* sidebar menu for small screen */}
+            
+            <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0' }`}>
+                <div className='flex flex-col text-gray-600'>
+                    <div  onClick={()=>setVisilbe(false)} className='flex items-center gap-4 p-3 cursor-pointer'>
+                        <img className='h-4 rotate-180 cursor-pointer'src={assets.dropdown_icon} alt="" />
+                        <p>Back</p>
+                    </div> 
+                            <NavLink className='py-2 pl-6 border' to='/'>HOME</NavLink>
+                            <NavLink className='py-2 pl-6 border' to='/collection'>COLLECTION</NavLink>
+                            <NavLink className='py-2 pl-6 border' to='/about'>ABOUT</NavLink>
+                            <NavLink className='py-2 pl-6 border ' to='/contact'>CONTACT</NavLink>
+                </div>
             </div>
     </div>
   )
