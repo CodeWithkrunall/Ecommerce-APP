@@ -20,3 +20,21 @@ install
 
 react js
 npm install react-router-dom react-toastify
+
+ h-[2px] 
+
+
+mistakes
+[
+// this is right
+    div flex flex-col
+    Navlink
+    /div
+
+    method 2 no div this is also right
+
+    NavLink
+    Navlink
+    Navlink
+
+]
