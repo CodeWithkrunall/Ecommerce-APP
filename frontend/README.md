@@ -38,3 +38,31 @@ mistakes
     Navlink
 
 ]
+
+🎤 Context API (Interview Answer)
+
+👉 Tu aise bole:
+
+“Context API React ka ek built-in feature hai jisse hum global data share kar sakte hai without props drilling.”
+
+👉 Thoda explain kare:
+
+“Jaise agar mujhe products, cart ya user data multiple components me use karna ho, to main Context bana ke ek jagah store karta hu aur fir useContext hook se kahin bhi access kar leta hu.”
+
+🎤 Redux (Interview Answer)
+
+👉 Tu aise bole:
+
+“Redux ek state management library hai jo large applications me complex state handle karne ke liye use hoti hai.”
+
+👉 Explain:
+
+“Isme ek central store hota hai jaha state rehta hai, aur hum actions dispatch karte hai aur reducers decide karte hai state kaise update hoga.”
+
+⚔️ Difference (MOST IMPORTANT 🔥)
+
+👉 Agar interviewer bole: difference batao
+
+Tu bole:
+
+“Context simple global data sharing ke liye hai, jabki Redux complex state management ke liye use hota hai jaha multiple actions aur logic involved hote hai.”
