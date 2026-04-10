@@ -6,7 +6,9 @@ const LatestCollection = () => {
     const { products } = useContext(ShopContext)
     console.log(products)
   return (
-    <div>
+    <div className='w-full '>
+
+        
 
     </div>
   )
