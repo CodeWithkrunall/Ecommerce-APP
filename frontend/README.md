@@ -49,19 +49,19 @@ mistakes
 
 “Jaise agar mujhe products, cart ya user data multiple components me use karna ho, to main Context bana ke ek jagah store karta hu aur fir useContext hook se kahin bhi access kar leta hu.”
 
-🎤 Redux (Interview Answer)
+ Redux (Interview Answer)
 
-👉 Tu aise bole:
+ Tu aise bole:
 
 “Redux ek state management library hai jo large applications me complex state handle karne ke liye use hoti hai.”
 
-👉 Explain:
+ Explain:
 
 “Isme ek central store hota hai jaha state rehta hai, aur hum actions dispatch karte hai aur reducers decide karte hai state kaise update hoga.”
 
-⚔️ Difference (MOST IMPORTANT 🔥)
+ Difference (MOST IMPORTANT 🔥)
 
-👉 Agar interviewer bole: difference batao
+ Agar interviewer bole: difference batao
 
 Tu bole:
 
