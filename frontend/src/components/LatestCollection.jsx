@@ -3,6 +3,7 @@ import { products } from '../assets/assets'
 import { ShopContext } from '../context/ShopContext'
 import Title from './Title'
 import Collection from '../pages/Collection'
+import ProductItem from './ProductItem'
 
 const LatestCollection = () => {
     const { products } = useContext(ShopContext)
@@ -19,7 +20,18 @@ const LatestCollection = () => {
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
             Explore the newest arrivals crafted with modern design and timeless elegance for every occasion.
             </p>
+        </div>
+        
+        {/* rendiring products */}
+        
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'>
+            {
+                latestProducts.map((item,index)=>(
+                    <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price} />
 
+                ) )
+
+            }
         </div>
     </div>
   )
