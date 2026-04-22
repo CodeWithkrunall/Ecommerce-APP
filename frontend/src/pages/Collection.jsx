@@ -18,7 +18,7 @@ const Collection = () => {
 
               {/* Category Filter */}
 
-                    <div className={`border border-gray pl-5 py-3 mt-6 ${showFilter? " " : "hidden"}sm:block`}>
+                    <div className={`border border-gray pl-5 py-3 mt-6 ${showFilter? " " : 'hidden'} sm:block`}>
 
                       <p className='text-sm font-medium mb-3 '>CATEGORIES</p>
                           
@@ -37,7 +37,7 @@ const Collection = () => {
                             </div>
                     </div>
                                      
-                               <div className={`border border-gray pl-5 py-3 mt-5 ${showFilter? '' : 'hidden'}sm:block `}>
+                               <div className={`border border-gray pl-5 py-3 mt-5 ${showFilter? '' : 'hidden'} sm:block `}>
                                 <p className='text-sm font-medium mb-3'>TYPE</p>
 
                                 <div className='flex flex-col gap-2 text-sm font-light'>
